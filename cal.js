@@ -2,27 +2,25 @@ const Calculator = (A, B, C) =>
 {
    let result; 
  switch(A) {
-    case '+':
+    case "+":{
       result = B + C;
       break;
-
-      case '-':
+      }
+      case "-":{
       result = B - C;
       break;
-
-      case '*':
+      }      
+      case "*":{
       result = B * C;
       break;
-
-      case '/':
+      }
+      case "/":{
       result = B / C;
       break;
-
-      default:
+      }
+      default:{
       result = "invalid operator";
       break;
  }
- return result;
+ }
 };
-
-console.log(Calculator("+",4,5));
